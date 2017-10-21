@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<Template Title="Results of survey">
+  <Field Type="Lookup" DisplayName="Question" Required="FALSE" EnforceUniqueValues="FALSE" List="Questions" ShowField="Title" StaticName="Question" Name="Question" />
+  <Field Type="Lookup" DisplayName="Answer" Required="FALSE" EnforceUniqueValues="FALSE" List="Answers" ShowField="Title" StaticName="Answer" Name="Answer" />
+  <Field Type="Lookup" DisplayName="BotConversationInfo" Required="FALSE" EnforceUniqueValues="FALSE" List="BotConversationInfo" ShowField="ID" StaticName="BotConversationInfo" Name="BotConversationInfo" />
+</Template>

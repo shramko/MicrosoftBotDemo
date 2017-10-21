@@ -1,0 +1,4 @@
+﻿<?xml version="1.0"?>
+<Template Title="Questions">
+  <Field Type="Note" DisplayName="Question" Required="TRUE" EnforceUniqueValues="FALSE" NumLines="6" RichText="FALSE" StaticName="Question" Name="Question" />
+</Template>

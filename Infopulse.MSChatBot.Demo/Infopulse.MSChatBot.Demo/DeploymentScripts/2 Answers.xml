@@ -1,0 +1,6 @@
+﻿<?xml version="1.0"?>
+<Template Title="Answers">
+  <Field Type="Lookup" DisplayName="Question" Required="TRUE" EnforceUniqueValues="FALSE" List="Questions" ShowField="Title" StaticName="Question" Name="Question" />
+  <Field Type="Note" DisplayName="Answer" Required="TRUE" EnforceUniqueValues="FALSE" NumLines="6" RichText="FALSE" StaticName="Answer" Name="Answer" />
+  <Field Type="Lookup" DisplayName="NextQuestion" Required="FALSE" EnforceUniqueValues="FALSE" List="Questions" ShowField="Title" StaticName="NextQuestion" Name="NextQuestion" />
+</Template>

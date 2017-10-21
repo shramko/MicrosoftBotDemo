@@ -1,0 +1,4 @@
+﻿<?xml version="1.0"?>
+<Template Title="Categories of questions">
+  <Field Type="Lookup" DisplayName="FirstQuestion" Required="TRUE" EnforceUniqueValues="FALSE" List="Questions" ShowField="Title" StaticName="FirstQuestion" Name="FirstQuestion" />
+</Template>

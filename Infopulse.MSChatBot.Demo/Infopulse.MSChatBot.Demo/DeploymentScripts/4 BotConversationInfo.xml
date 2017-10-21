@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<Template Title="BotConversationInfo">
+  <Field Type="Text" DisplayName="BotId" Required="FALSE" EnforceUniqueValues="FALSE" MaxLength="255" StaticName="BotId" Name="BotId" />
+  <Field Type="Text" DisplayName="ConversationId" Required="FALSE" EnforceUniqueValues="FALSE" MaxLength="255" StaticName="ConversationId" Name="ConversationId" />
+  <Field Type="Text" DisplayName="ChannelId" Required="FALSE" EnforceUniqueValues="FALSE" MaxLength="255" StaticName="ChannelId" Name="ChannelId" />
+  <Field Type="Text" DisplayName="ServiceUrl" Required="FALSE" EnforceUniqueValues="FALSE" MaxLength="255" StaticName="ServiceUrl" Name="ServiceUrl" />
+</Template>

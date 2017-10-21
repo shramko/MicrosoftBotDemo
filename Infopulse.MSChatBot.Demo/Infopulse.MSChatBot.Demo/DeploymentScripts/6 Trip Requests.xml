@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<Template Title="Trip Requests">  
+  <Field Type="Text" DisplayName="Departure" Required="FALSE" EnforceUniqueValues="FALSE" MaxLength="255" StaticName="Departure" Name="Departure" />
+  <Field Type="Text" DisplayName="Destination" Required="FALSE" EnforceUniqueValues="FALSE" MaxLength="255" StaticName="Destination" Name="Destination" />
+  <Field Type="Text" DisplayName="Transport" Required="FALSE" EnforceUniqueValues="FALSE" MaxLength="255" StaticName="Transport" Name="Transport" />
+  <Field Type="Choice" DisplayName="Status" Required="TRUE" EnforceUniqueValues="FALSE" Format="Dropdown" FillInChoice="FALSE" StaticName="Status" Name="Status" >
+  	<Default>
+  		New
+  	</Default>
+  	<CHOICES>
+  		<CHOICE>
+  			New
+  		</CHOICE>
+  		<CHOICE>
+  			Confirmed
+  		</CHOICE>
+  		<CHOICE>
+  			Rejected
+  		</CHOICE>
+  	</CHOICES>
+  </Field>
+  <Field Type="Lookup" DisplayName="BotConversationInfo" Required="FALSE" EnforceUniqueValues="FALSE" List="BotConversationInfo" ShowField="ID" StaticName="BotConversationInfo" Name="BotConversationInfo" />
+</Template>

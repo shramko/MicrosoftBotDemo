@@ -1,0 +1,50 @@
+﻿{
+  "type": "object",
+  "required": [
+    "departure",
+    "destination",
+    "transport"
+  ],
+  "Templates": {
+    "NotUnderstood": {
+      "Patterns": [ "I do not understand \"{0}\".", "Try again, I don't get \"{0}\"." ]
+    },
+    "EnumSelectOne": {
+      "Patterns": [ "Please let me know the {&}: {||}" ],
+      "ChoiceStyle": "Auto"
+    }
+  },
+  "properties": {
+    "departure": {
+      "Prompt": { "Patterns": [ "Please provide the departure point:" ] },
+      "type": [
+        "string",
+        "null"
+      ],
+      "Validate": "var result = new ValidateResult{ IsValid = true, Value = value}; var departure = (value as string).Trim(); if (departure.Length == 0) {result.Feedback = \"Please provide a brief departure.\"; result.IsValid = false; } return result;"
+    },
+    "destination": {
+      "Prompt": { "Patterns": [ "Please provide the destination point:" ] },
+      "type": [
+        "string",
+        "null"
+      ],
+      "Validate": "var result = new ValidateResult{ IsValid = true, Value = value}; var destination = (value as string).Trim(); if (destination.Length == 0) {result.Feedback = \"Please provide some more details:\"; result.IsValid = false; } return result;"
+    },
+    "transport": {
+      "Prompt": {
+        "Patterns": [ "What kind of transport? {||}" ]
+      },
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "Car",
+        "Bus",
+        "Train",
+        "Airplaine"
+      ]
+    }
+  }  
+}
